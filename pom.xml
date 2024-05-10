@@ -255,11 +255,18 @@
             <resource>
                 <directory>${basedir}</directory>
                 <includes>
-                  <include>LICENSE</include>
+                    <include>LICENSE</include>
                 </includes>
             </resource>
+            <resource>
+                <directory>${basedir}</directory>
+                <includes>
+                    <include>LICENSE</include>
+                </includes>
+                <targetPath>${project.build.directory}/apidocs/META-INF</targetPath>
+            </resource>
         </resources>
-        <plugins>
+	<plugins>
             <plugin>
                 <artifactId>maven-toolchains-plugin</artifactId>
                 <version>3.1.0</version>
