@@ -45,7 +45,7 @@ public class ContextLifecycleProviderFacade<ID> {
      * @param executionScopedIdentifier identifies test and scope
      * @param result signals success if null; otherwise presents details on failure
      * @return true if scope is closed without pending parameter values or
-     *         combinations;<br/>
+     *         combinations;<br>
      *         otherwise false if closed but with pending parameter values or
      *         pending parameter value combinations that demand repetition of
      *         test-execution unless there some other circumstances to prevent it
