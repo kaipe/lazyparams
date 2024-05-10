@@ -988,12 +988,12 @@ reevaluated once-in-while by running tests with this profile enabled!
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/lazyparams/lazyparams</url>
+            <url>https://maven.pkg.github.com/kaipe/lazyparams</url>
         </repository>
     </distributionManagement>
     <scm>
-        <connection>scm:git:https://github.com/lazyparams/lazyparams.git</connection>
-        <developerConnection>scm:git:https://github.com/lazyparams/lazyparams.git</developerConnection>
-        <url>https://github.com/lazyparams/lazyparams</url>
+        <connection>scm:git:https://github.com/kaipe/lazyparams.git</connection>
+        <developerConnection>scm:git:https://github.com/kaipe/lazyparams.git</developerConnection>
+        <url>https://github.com/kaipe/lazyparams</url>
     </scm>
 </project>
