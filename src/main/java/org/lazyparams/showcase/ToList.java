@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.lazyparams.ToDisplayFunction;
+import org.lazyparams.showcase.ScopedLazyParameter.CombiningCollector;
 import org.lazyparams.showcase.ScopedLazyParameter.FactoryRoot;
 import org.lazyparams.showcase.ScopedLazyParameter.Identifier;
 
@@ -22,7 +23,7 @@ import org.lazyparams.showcase.ScopedLazyParameter.Identifier;
  * that achieve parametrization of lists.
  * The purpose is to have an implementation as argument to
  * {@link ScopedLazyParameter.BasicFactory#asParameter(String,CombiningCollector)} (or
- * {@link ScopedLazyParameter.BasicFactory#asParameter(org.lazyparams.ToDisplayFunction,CombiningCollector)})
+ * {@link ScopedLazyParameter.BasicFactory#asParameter(ToDisplayFunction,CombiningCollector)})
  * in order to choose resulting list elements from the parameter values
  * specified when fluent parametrization was rooted with
  * {@link ScopedLazyParameter#from(Object[]) ScopedLazyParameter.from(T[])} (or
@@ -44,8 +45,7 @@ import org.lazyparams.showcase.ScopedLazyParameter.Identifier;
  *
  * @author Henrik Kaipe
  */
-public abstract class ToList<T>
-implements ScopedLazyParameter.CombiningCollector<T,List<T>> {
+public abstract class ToList<T> implements CombiningCollector<T,List<T>> {
 
     /**
      * Produces a list that contains one or two of the parameter input values.
