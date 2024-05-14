@@ -319,6 +319,7 @@
                 <version>3.6.3</version>
                 <configuration>
                     <legacyMode>true</legacyMode>
+                    <detectJavaApiLink>false</detectJavaApiLink>
                     <jdkToolchain>
                         <version>17</version>
                     </jdkToolchain>
