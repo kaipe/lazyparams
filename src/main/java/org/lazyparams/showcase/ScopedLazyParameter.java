@@ -280,7 +280,7 @@ public abstract class ScopedLazyParameter<T> {
          * <pre><code>
          * LazyParams.pickValue("foobar", EnumType.FOO, EnumType.BAR);
          * </code></pre> ... will not be confused with ... <pre><code>
-         * LazyParams.pickValue("foo", EnumType.values())
+         * LazyParams.pickValue("foobar", EnumType.values())
          * </code></pre> ... in case <code>FOO</code> and <code>BAR</code> are all the
          * constants of enum <code>EnumType</code>.
          * <br>
@@ -295,8 +295,7 @@ public abstract class ScopedLazyParameter<T> {
          * and
          * {@link LazyParams#pickValue(String, Object[])
          * pickValue(String parameterName, T[] values)} (even though they
-         * overload one another) will internally provide different ID-details
-         * to this method!
+         * overload one another) will internally provide different extra ID-details.
          */
         returns_Factory_with_Identifier_selected withExtraIdDetails(Object... extraIdDetails);
     }
