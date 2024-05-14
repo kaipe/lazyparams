@@ -211,13 +211,13 @@ public abstract class ScopedLazyParameter<T> {
      * Thereafter the factory progression path for this particular
      * pick is combined with the ID-string to form a core parameter ID,
      * which will ultimately define the parameter. I.e. plenty of effort is
-     * invested to make sure parameter value-picks such as ...<code>
+     * invested to make sure parameter value-picks such as ...<pre><code>
      * ScopedLazyParameter.from(false,true).as("foo");
-     * </code>... will not be confused with neither ...<code>
+     * </code></pre>... will not be confused with neither ...<pre><code>
      * ScopedLazyParameter.from(false,true).notCombined().as("foo")
-     * </code>... nor ...<code>
+     * </code></pre>... nor ...<pre><code>
      * LazyParams.pickValue("foo", false, true);
-     * </code>
+     * </code></pre>
      * ... where the latter only separates itself because the
      * LazyParams#pickValue(...)-methods make sure to further distinguish the
      * parameter ID of their value-picks by internal use of method
@@ -277,11 +277,11 @@ public abstract class ScopedLazyParameter<T> {
          * <br><br>
          * This method is used internally by the best practice API of
          * {@link LazyParams} to make sure that parameter requested with ...
-         * <code>
+         * <pre><code>
          * LazyParams.pickValue("foobar", EnumType.FOO, EnumType.BAR);
-         * </code> ... will not be confused with ... <code>
+         * </code></pre> ... will not be confused with ... <pre><code>
          * LazyParams.pickValue("foo", EnumType.values())
-         * </code> ... in case <code>FOO</code> and <code>BAR</code> are all the
+         * </code></pre> ... in case <code>FOO</code> and <code>BAR</code> are all the
          * constants of enum <code>EnumType</code>.
          * <br>
          * Do observe how repeated usage of one of the above statements will
