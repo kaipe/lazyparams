@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   release:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Action
         uses: actions/checkout@v4
